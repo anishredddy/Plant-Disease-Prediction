@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block pagetitle %} Plant Disease Detection {%
+endblock pagetitle %} {% block body %}
+
+<style>
+  .apphead {
+    color: #294557;
+    font-size: 8rem;
+    font-weight: 400;
+    margin-top: 5rem;
+  }
+
+  .Hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+
+  .title-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-iden {
+    width: min-content;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    background-color: #294557;
+    color: white;
+    font-size: 1.2rem;
+    transition-duration: 300ms;
+    margin: 0 5px;
+  }
+
+  .btn-iden:hover {
+    background-color: #4c837a;
+  }
+
+  .btn-grp {
+    display: flex;
+    align-items: center;
+  }
+</style>
+<div class="Hero">
+  <div class="title-grp">
+    <h1 class="apphead">Plant Protect</h1>
+    <div class="btn-grp">
+      <a href="/index"><button class="btn-iden">Identify</button></a>
+      <a href="/market"><button class="btn-iden">Explore</button></a>
+    </div>
+  </div>
+  <img src="../static/images/plantIcon.png" alt="plant icon" />
+</div>
+<!-- <div class="spacer layer2"><button>Identify</button></div> -->
+
+{% endblock body %}
